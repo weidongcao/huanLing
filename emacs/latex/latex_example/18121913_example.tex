@@ -1,0 +1,113 @@
+\documentclass{article}
+
+\begin{document}
+\title{This Is A \LaTeX Demo}
+\author{Weidong Cao}
+\date{2018/12/19}
+\maketitle
+\begin{abstract}
+  In this article, I shall discuss some of the fundamental topics in
+  producing s structured document. This document itself does not go into
+  much depth,but is instead the output of an example of how to implement
+  这是我的第一个LaTeX论文
+\end{abstract}
+
+\section{Introduction}
+
+This small document is designed to illustrate how easy it is to create a well structured
+document within \LaTeX\citee{lamport94}. You should quickly be able to see how the article
+looks very professional,despite the content being far from acacemic. Titles, section
+
+\section{Structure}
+
+One of the great advantages of \LaTeX{} is that all it needs to know is
+the struceure of a document, and then it will take care of the layout
+
+and presentation itself. So, here we shall begin looking at how exactly
+
+you tell \LaTeX{} what it needs to know about your document.
+
+\subsection{Top Matter}
+
+\label{sec:top-matter}
+
+The first thing you normally have is a title of the document, as well as
+
+information about the author and date of publication. In \LaTeX{} terms
+
+this is all generally referred to as \emph{top matter}.
+
+\subsection{Article Information}
+
+\begin{itemize}
+\item \verb|\title{}| --- The title of the article
+\item \verb|\date| --- The date. use:
+  \begin{itemize}
+  \item \verb|\date{\today}| --- to get the date that the document is typeset.
+  \item \verb|\date{}| --- for no date.
+  \end{itemize}
+
+\end{itemize}
+
+\subsection{Author Information}
+\label{sec:info}
+
+The basic article class only provides the one command:
+\begin{itemize}
+\item \verb|\author{}| --- The author of the document.
+\end{itemize}
+
+It is common to not only include the author name,but to insert new lines(\verb|\\|)
+
+after and add things such as address and email details. For a slightly more logical
+approach, use the AMS article class (\emph{amsart}) and you have the following extra
+commands:
+
+\begin{itemize}
+\item \verb|address| --- The author's address. Use the new line command (\verb|\\|) for line\item \verb breaks
+\item \verb|thanks| --- Where you put any acknowledgments.
+\item \verb|eamil| --- The author's email address.
+\item \verb|urladdr| --- The URL for the author's web page.
+\end{itemize}
+
+\subsection{Sectioning Commands}
+\label{sec:info}
+
+The commands for inserting sections are fairly intuitive. of course,
+certain commands are appropriate to different document classes.
+for example, a book has chapters but a article does't.
+
+% a Simple table. The Center environment is first setup, otherwise the
+% table is left aligned. The tabular environment is what tells LaXeX
+% thatttt the data within is data for the table.
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+% The tabular environment is what tells Latex that the data within is
+% data for the table. The arguments say that there will be two
+% columns, both left justified (indicated by the 'l', you could also)
+% \item have 'c' or 'r'. The bars '|' indicate vertical lines throughout
+% \item the table.
+    \hline
+    Command & Level \\ \hline
+    \verb|\part{}| & -1 \\
+    \verb|\chapter{}| & 0 \\
+    \verb|\section{}| & 1 \\
+    \verb|\subsection{}| & 2 \\
+    \verb|\subsubsection{} | & 3 \\
+    \verb|\paragraph{} | & 4 \\
+    \verb|\subparagraph{} | & 5 \\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{thebibliography}{99}
+\bibitem{lamport94}
+  Leslie Lamport,
+  \emph{\LaTeX: A Document Preparation System}.
+  Addison Wesley, Massachusetts,
+  2nd Edition,
+  1994.
+\bibitem{wikibooks}
+  http://en.wikibooks.org/wiki/LaTeX/example.tex
+\end{thebibliography}
+\end{document}
