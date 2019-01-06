@@ -142,4 +142,20 @@ Y在给定x的情况下，符合正态分布，它是由随机误差项推导出
 
 我没让我去正例，要么取负例，正立的概率是批复率的概率是一减p。
 
+------------------------- 24:30 -------------------------
+损失函数要和目标函数等价,且取到极小值的函数
+
+$$
+\begin{cases}
+l(\theta) 
+&= \lnL(\theta)
+&= \ln \prod_{i=1}^{m} \frac{1}{\sigma\sqrt{2}{2\pi}} e^{- \frac{(y^{i} - \theta^{T}x^{i}^{2})}{2\sigma^{2}}
+&= \sum_{i=1}{m} \ln \frac{1}{\sigma\sqrt{2}{2\pi}} e^{- \frac{(y^{i} - \theta^{T}x^{i}^{2})}{2\sigma^{2}}
+&= m\ln\frac{1}{\sigma\sqrt{2}{2\pi} - \frac{1}{\sigma^{2}} \cdot \frac{1}{2} \sum_{i=1}{m}(y{i} - \theta^{T}x^{i})^{2}}
+\end{cases}
+$$
+就可以把最后送去的部分定义为损失函数:
+$$
+loss(y_{j}, \hat y_{j}) = J(\theta) = \frac{1}{2}\sum_{i=1}{m}(h_{\theta}(x_{i}) - y^{i})^{2}
+对数似然函数可以求它的极小值从而使得极大似然估计取得最大
 
