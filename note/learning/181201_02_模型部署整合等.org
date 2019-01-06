@@ -1,0 +1,26 @@
+* 模型部署整合
+** 模型评估总结_分类算法评估方式
+怎样在scikit-learn里调用精确度,召回率,F1指标等等这些值呢?
+| 指标             | 描述            | scikit-learn函数                             |
+|------------------+-----------------+----------------------------------------------|
+| Precision        | 精确度          | from sklearn.metrics import precision_score  |
+| Recall           | 召回率          | from sklearn.metrics import recall_score     |
+| F1               | F1指标          | from sklearn.metrics import f1_score         |
+| Confusion Matrix | 混淆矩阵        | from sklearn.metrics import confusion.matrix |
+| ROC              | ROC曲线         | from sklearn.metrics import roc              |
+| AUC              | ROC曲线下的面积 | from sklearn.metrics import auc              |
+|------------------+-----------------+----------------------------------------------|
+
+** 模型部署和整合
+当模型构建好后,将训练好的模型存储到数据库中,方便其它使用模型的应用加载(构建好的模型一般为一个矩阵)
+
+模型需要周期性
+
+一个月,一周
+
+** 模型的监控与反馈
+当模型一旦投入到实际生产环境中,模型的效果监控是非常重要的,往往需要关注业务效果和用户体验,所以有时候会进行A/B测试
+
+模型需要对用户的反馈进行响应操作,即进行模型修改,但是要注意异常反馈信息对模型的影响,故需要进行必要的数据预处理操作.
+
+
