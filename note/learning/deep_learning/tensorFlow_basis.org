@@ -1,0 +1,15 @@
+* TensorFlow基础
+** TensorFlow的特性
+ *高度的灵活性* :只要能够将计算表示成为一个数据流图,那么就可以使用TensorFlow
+ *可移植性* :TensorFlow支持CPU和GPU的运算,并且可以运行在台式机,服务器,手机移动端设备等等.
+ *自动求微分* :TensorFlow内部实现了自动对于各种给定目标函数求导的方式.
+ *多种语言支持* :python,C++
+ *性能高度优化* : 
+
+** TensorFlow基本概念
+ - 图(Graph)
+ - 张量(Tensor)
+ - 操作(op)
+ - 会话(Session)
+ - 变量(Variable)
+
