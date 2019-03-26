@@ -1,0 +1,44 @@
+* 项目部分笔记
+relu函数一共有6种:
+ 1. relu
+ 2. leaky-relu
+    1. x > 0的时候y = x
+    2. x < 0的时候y = ax (0 < a < 1)
+ 3. y = elu(x)
+    1. x > 0的时候y = x
+    2. x < 0的时候y = e^x -1
+ 4. y = selu
+    1. x > 0的时候y = x
+    2. x < 0的时候y = a(e^x -1) [a由训练得到,最终会趋近于-a]
+ 5. y = relu6(x)
+    1. x < 6的时候y = 6
+    2. x < 6的时候y = relu
+ 6. y = crelu
+    1. x >= 0的时候y转变成二维向量:[x, 0]
+    2. x < 0的时候y转变成二维向量:[0, x]
+ 
+非relu的激活函数:
+1. sigmod函数
+2. tanh函数 = 
+为什么这两个函数用得比较少呢?(出现梯度消失)
+因为这两个函数的导数容易趁近于0
+**Sigmod函数的导数值介于[0,0.25]之间**
+**tanh函数的导数值介于[0,1]**
+**能使用tanh函数就不使用Sigmod函数**
+
+**relu为什么是非线性激活函数**
+
+错误：无法提交处理 (有冲突的文件)
+libidn2: 文件系统中已存在 /usr/lib/libidn2.so.0
+
+in ~ [14:56:47] 
+$ ll /usr/lib/libidn*   
+lrwxrwxrwx 1 root root     16 1月  14 03:20 /usr/lib/libidn2.so -> libidn2.so.4.0.0
+lrwxrwxrwx 1 root root     10 2月  15 12:48 /usr/lib/libidn2.so.0 -> libidn2.so
+lrwxrwxrwx 1 root root     16 1月  14 03:20 /usr/lib/libidn2.so.4 -> libidn2.so.4.0.0
+-rwxr-xr-x 1 root root 120512 1月  14 03:20 /usr/lib/libidn2.so.4.0.0
+lrwxrwxrwx 1 root root     16 9月  11 2018 /usr/lib/libidn.so -> libidn.so.12.6.0
+lrwxrwxrwx 1 root root     16 9月  11 2018 /usr/lib/libidn.so.12 -> libidn.so.12.6.0
+-rwxr-xr-x 1 root root 210728 9月  11 2018 /usr/lib/libidn.so.12.6.0
+
+
