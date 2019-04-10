@@ -4,8 +4,12 @@ import numpy as np
 from tensorflow.examples.tutorials.mnist import input_data
 
 SAVE_PATH = 'model/mnist'
-
-
+SUMMAY_PATH = 'summary/'
+# 定义一个磁盘路径,存放监视数据
+# 把所有的监视数据用summary_all,
+# 在train中定义一个File_Writer
+# Session.run
+# 打开Tensorboard进行监视
 class Tensors:
     def __init__(self):
         x = tf.placeholder(tf.float32, [None, 28 * 28], name='x')
@@ -39,10 +43,14 @@ class Tensors:
         self.train_op = train_op
         self.predict = tf.nn.softmax(x)
 
+        tf.summary.scalar('loss', loss)
+        self.summary_op = tf.summary.merge_all()
+
 
 class Mnist:
     def __init__(self):
         graph = tf.Graph()
+        self.graph = graph
         with graph.as_default():
             self.tensors = Tensors()
             self.session = tf.Session(graph=graph)
@@ -59,6 +67,7 @@ class Mnist:
         num = ds.train.num_examples
         step_per_epoch = num // batch_size
 
+        file_writer = tf.summary.FileWriter(SUMMAY_PATH, graph=self.graph)
         for epoch in range(epoches):
             for step in range(step_per_epoch):
                 imgs, labels = ds.train.next_batch(batch_size)
@@ -67,7 +76,15 @@ class Mnist:
                     self.tensors.y: labels,
                     self.tensors.lr: lr
                 }
-                loss, _ = self.session.run([self.tensors.loss, self.tensors.train_op], feed_dict)
+                _, loss, summary = self.session.run(
+                    [
+                        self.tensors.train_op,
+                        self.tensors.loss,
+                        self.tensors.summary_op
+                    ],
+                    feed_dict
+                )
+                file_writer.add_summary(summary, epoch * step_per_epoch + step)
                 print("%d / %d, %d / %d: loss = %s" % (step, step_per_epoch, epoch, epoches, loss))
             self.saver.save(self.session, SAVE_PATH)
             print('model saved into %s' % SAVE_PATH)
@@ -96,6 +113,5 @@ class Mnist:
 
 if __name__ == '__main__':
     mnist = Mnist()
-    # mnist.train()
-    mnist.predict()
-
+    mnist.train()
+    # mnist.predict()
