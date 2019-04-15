@@ -88,13 +88,26 @@ class Face:
                 self.session.run(tf.global_variables_initializer())
 
     def train(self, lr=0.0001, epoches=5, batch_size=50):
+        self.lr = lr
+        self.epoches = epoches
+        self.batch_size = batch_size
+
+        file_writer = tf.summary.FileWriter(SUMMARY_PATH, graph=self.graph)
+
         sample = Sample()
         steps_per_epoch = sample.num // epoches
 
         for epoch in range(epoches):
             for step in range(steps_per_epoch):
-                x, y = sample.next_batch()
-                print('%d/%d/%d' % (epoches, epoch, step), flush=True)
+                x, y = sample.next_batch(batch_size)
+                feed_dict = {
+                    self.tensors.lr: self.lr,
+                    self.tensors.training: True,
+                    self.tensors.x: x,
+                    self.tensors.y: y
+                }
+                self.session.run([self.tensors.train_op, self.tensors.summary_op], feed_dict=feed_dict)
+                print('%d/%d/%d: lr: %s, batch_size: %s' % (epoches, epoch, step, self.lr, self.batch_size), flush=True)
 
         print('Training finished!', flush=True)
 
@@ -132,3 +145,7 @@ class Sample:
     @property
     def num(self):
         return len(self.xs)
+
+
+# ------------------------------------------ Web ----------------------------------------------
+# ------------------------------------------ Web ----------------------------------------------
