@@ -12,4 +12,22 @@
  - 操作(op)
  - 会话(Session)
  - 变量(Variable)
+ 
 
+** TensorFlow基本用法
+TensorFlow可以认为是一种编程工具,使用TensorFlow来实现具体的业务需求,所以我们可以认为TensorFlow就是一个"工具箱",然后我们使用TensorFlow这个"工具箱"中的各种"工具"(方法/API)来实现各种功能,比如使用TensorFlow实现基本的数值计算,机器学习,深度学习等;使用TensorFlow必须理解下列概念:
+ - 使用图(Graph)来表示计算任务
+ - 在会话(Session)的上下文中执行图
+ - 使用tensor表示数据
+ - 通过变量(Variable)来维护状态
+ - 使用feed和fetch可以为任意的操作(Operation/op)赋值或者从其中获取数据
+
+** TensorFlow程序结构
+ - TensorFlow的程序一般分为两个阶段:构建阶段和执行阶段
+ - 构建阶段: op的执行步骤被描述称为一个图,然后使用TensorFlow提供的API构建这个图
+ - 执行阶段: 将构建好的执行图(Operation Graph)在给定的会话中执行,
+
+** TensorFlow图
+ - TensorFlow编程的重点是根据业务需求,使用TensorFlow的API将业务转换为执行图(有向无环图);图中的节点是tensor,节点之间的连线是节点之间的操作,连线前的节点可以认为是操作的输入,连线后的节点可以认为操作的;根据节点的特性(是否输入输出),可以将节点分为源节点,中间节点和最终的结果节点
+ - 图构建的第一步就是创建源op(Source op);源op不需要任何的输入,op构造器的返回值代表被构造出来的op的输出,这些返回值可以传递给其它op构造器作为输入或者直接获取结果.
+ - TensorFlow库中有一个默认图(Default Graph),op构造器可以直接为其添加节点,一般情况下,使用默认的Graph即可完成程序代码的实现.不过TensorFlow也支持通过Graph类管理多个图
