@@ -31,3 +31,25 @@ TensorFlow可以认为是一种编程工具,使用TensorFlow来实现具体的�
  - TensorFlow编程的重点是根据业务需求,使用TensorFlow的API将业务转换为执行图(有向无环图);图中的节点是tensor,节点之间的连线是节点之间的操作,连线前的节点可以认为是操作的输入,连线后的节点可以认为操作的;根据节点的特性(是否输入输出),可以将节点分为源节点,中间节点和最终的结果节点
  - 图构建的第一步就是创建源op(Source op);源op不需要任何的输入,op构造器的返回值代表被构造出来的op的输出,这些返回值可以传递给其它op构造器作为输入或者直接获取结果.
  - TensorFlow库中有一个默认图(Default Graph),op构造器可以直接为其添加节点,一般情况下,使用默认的Graph即可完成程序代码的实现.不过TensorFlow也支持通过Graph类管理多个图
+Tensor
+
+
+** TensorFlow控制依赖
+ - 我们可以通过Variable和Assign完成变量的定义和更新,但是如果在更新变量之前需要更新其它变量,那么会导致一个比较严重的问题:也就是需要多次调用sess.run()方法来进行变量的更新.通过这种方式,代码复杂程度上升,同时也没有执行效率
+ - 解决该问题的方案就是:控制依赖.通过TensorFlow中提供的一组函数来处理不完全依赖的情况下的操作排序问题(即给定哪个操作先执行的问题),通过tf.control_dependencies API完成.
+
+** TensorFlow设备
+   - 设备是指一块可以用来运算并且拥有自己的地址空间的硬件,如CPU和GPU.TensorFlow为了在执行操作的时候充分利用计算资源,可以明确指定操作在哪个设备上执行.
+   - 一般情况下不需要显示指定使用CPU不是GPU,TensorFlow会自动检测.如果检测到GPU,TensorFlow会尽可能地利用第一个GPU来执行操作.注意:如果机器上有超过一个可用的GPU,那么除了每一个外其它GPU默认是不参与计算的.所以,在实际TensorFlow编程中,经常需要明确给定使用的CPU和GPU.
+
+     - "/cpu:0" : 表示使用机器CPU运算
+
+     - "/gpu:0" : 表示使用第一个GPU运算,如果有的话
+
+     - "/gpu:1" : 表示使用第二个GPU运算,以此类推
+
+** TensorFlow分布式训练
+   TensorFlow中的集群(Cluster)指的是一系列能够对TensorFlow中的图(Graph)进行分布式计算的任务(Task).每个任务是同服务(Server)相关联的.TensorFlow中的服务会包含一个用于创建Session的主节点和至少一个用于图 运算的工作节点.另外在TensorFlow中,一个集群可以被拆分为一个或者多个作业(Job),每个作业可以包含至少一个任务
+   使用单台机器或者单个GPU/CPU来进行模型训练,训练速度会受资源的影响,因为毕竟单个的设备的计算能力和存储能力具有一定的上限,针对这个问题,TensorFlow支持分布式模型运算,支持多机器,多GPU,多CPU各种模型的组合运行方案的设计.(默认情况下,TensorFlow程序会将程序运行在每一个GPU上<如果有GPU,并且安装的TensorFlow支持GPU运行>)
+   TensorFlow的分布式支持单机多GPU,单机GPU+CPU,多机GPU等结构,不过所有结构的构建方式基本上类似.
+   除了TensorFlow外,Caffe,DeepLearning4j等也支持分布式训练,花前月下其中DeepLearning4j的分布式效果相对比较成熟
