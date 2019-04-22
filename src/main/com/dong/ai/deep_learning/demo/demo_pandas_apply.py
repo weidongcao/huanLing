@@ -34,7 +34,7 @@ def square_row_num(names, record):
 
 
 if __name__ == '__main__':
-    names = ['aa', 'bb', 'cc']
+    names = ['home', 'bb', 'cc']
     indexs = [0, 1, 2]
     datas = [
         [1, 2, 3],
