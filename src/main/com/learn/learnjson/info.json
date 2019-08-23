@@ -1,0 +1,1 @@
+{"prarams":{"student":{"name":"张三","age":"24","gender":"man","schoolmate":["李四","王二","麻子"],"score":{"english":90,"mathematics":98}},"programmer":{"name":"李静","age":28,"gender":"female","colleague":["刘波","王工","杨梅"],"skill":{"java":"excel","python":"proficiency","scala":"notbad","sql":"perfect"}}},"url":{"host":"192.168.0.1","port":"8888","method":"get"}}
