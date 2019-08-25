@@ -1,0 +1,30 @@
+* yolo3笔记
+  
+** yolo1目标检测
+将一幅图像分成S * S个风格(grid Cell),如果某个Object的中心落在这个风格中,则这个风格负责预测这个Object
+
+每个网格要预测B个bounding box,每个bounding box除了要回归自身的位置之外,还要附带预测一个confidence值,即每个box要预测(x, y, w, h)和confidence共5个值.
+
+这个confidence代表了所有预测的box中含有Object的置信度和这个box预测得有多准两重重要的信息
+
+其中如果有Object落在一个grid cell里,第一项取1,否则取0,第二项是预测的bounding box和实际的ground truth之间的IOU值
+
+每个bounding box要预测(x, y, w, h)共5个值,每个网格还要预测一个类别信息,记为C类,则S * S个网格,每个网格要预测b个bounding box,还要预测C个Categories.输出S * S * (5 * B  + C)的一个Tensor.
+注意:Class信息是针对每个风格的,confidence信息是针对每个bounding box的.
+
+在test的时候,每个网格预测的class信息和bounding box 预测的confidence信息相乘,就得到每个bounding box的class-specific confidence score:
+
+等式左边第一项就是每个风格预测的类别信息,第二三项就是每个bounding box预测的confidence.这个乘积即表示了预测的b-box属于某一类的概率,也有该box准确度的信息.
+
+** YOLO2目标检测
+*** YOLO改进之调高分辨率
+    目前的目标检测方法中,基本上都会使用ImageNet预训练过的模型(Classifier)来提取特征,如果用的是AlexNet网络,那么输入图片会被resize到不足256 * 256,导致分辨率不够高,给检测带来困难.为此,新的YOLO网络把分辨率直接提升到了448 * 448,这了意味着原有的网络模型必须进行某种调整以适用新的分辨率输入.
+    对于YOLO2,作者首先对分类网络(自定义的darknet)进行了fine tune,分辨率改成448 * 448,在InageNet数据集上训练10轮,(10 epochs),训练后的网络就可以适用高分辨率的输入了.然后,作者对检测网络部分(也就是后半部分)也进行fine tune.这样通过提升输入的分辨率,map获得了4%的提升
+    YOLO2改进之直接位置预测:这个方法把26 * 26 * 512的特征图连接到了13 * 13 * 2048的特征图,这个特征图与原来的特征相连接.关于passthrough layer
+
+    多尺度训练:
+    原来的YOLO网络使用固定的448 * 448的图片作为输入,现在加入anchor boxes 后,输入变成了416 * 416.目前的网络只用到了卷积层和池化层,那么就可以进行动态调整(意思是可检测任意大小图片).作者希望YOLO2具有不同尺寸图片的鲁棒性,因此在训练的时候也考虑了这一点.
+
+    不同于固定输入网络的图片尺寸的方法,作者在几次迭代后就会微调网络.没经过10次训练(10 epochs),就会随机选择新的图片尺寸.YOLO网络使用的降采样参数为32,那么就使用32的倍数进行尺度池化{320, 352, ..., 608}.最终最小的尺寸为320 * 320,最大的尺寸为608 * 608.接着按照输入尺寸调整网络进行训练.
+
+    
