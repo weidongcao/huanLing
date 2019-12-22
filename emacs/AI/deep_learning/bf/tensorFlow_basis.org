@@ -53,3 +53,71 @@ Tensor
    使用单台机器或者单个GPU/CPU来进行模型训练,训练速度会受资源的影响,因为毕竟单个的设备的计算能力和存储能力具有一定的上限,针对这个问题,TensorFlow支持分布式模型运算,支持多机器,多GPU,多CPU各种模型的组合运行方案的设计.(默认情况下,TensorFlow程序会将程序运行在每一个GPU上<如果有GPU,并且安装的TensorFlow支持GPU运行>)
    TensorFlow的分布式支持单机多GPU,单机GPU+CPU,多机GPU等结构,不过所有结构的构建方式基本上类似.
    除了TensorFlow外,Caffe,DeepLearning4j等也支持分布式训练,花前月下其中DeepLearning4j的分布式效果相对比较成熟
+
+** TensorFlow变量作用域
+   通过tf.Variable我们可以创建变量,但是当模型复杂的时候,需要构建大量的变量集,这样会导致我们对于变量管理的复杂性,而且没法共享变量(存在多个相似的变量).这个问题,可以通过TensorFlow提供的变量作用域机制来解决,在构建一个图的时候,就可以非常容易的使用共享命名过的变量.
+   TensorFlow中有两个作用域:
+   1. name_scope
+   2. variable_scope
+   变量作用域机制在TensorFlow中主权通过一部分组成:
+ 1. tf.get_variable,通过所给定的名字创建或者返回一个对应的变量
+ 2. tf.variable_scope: 为通过创建的变量或者操作Operation指定命名空间
+    
+tf.get_variable方法在调用的时候,主要需要给定参数名称name,形状shape,数据类型dtype以及初始化方式initializer四个参数,该API底层执行的时候根据Variable_scope的属性reuse的值决定采用体积方式来获取变量.当reuse值为False的时候(不允许设置),作用域就是创建新变量设置的,此时要求对应的变量不存在,否则报错;当reuse值为True的时候,作用域就是为重用变量所设置的,此时要求对应的变量必须存在,否则报错.当reuse的值为tf.AUTO_REUSE的时候,表示如果变量存在就重用变量,如果变量不存在,就创建新变量返回.(备注:reuse一般设置在Variable_scope对象上)
+TF底层使用'变量作用域/变量名称:0'的方式标志变量(eg:func/op1/weight:0).
+| 初始化器                                  | 描述                                                                    |
+|-------------------------------------------+-------------------------------------------------------------------------|
+| tf.constant_initializer(value)            | 初始化为给定的常数值Value                                               |
+| tf.random_uniform_initializer(a,b)        | 初始化为从a到b的均匀分布的随机数                                        |
+| tf.random_normal_initializer(mean,stddev) | 初始化为均值为Mean,方差为stddev的服从高斯分布的随机数                   |
+| tf.orthogonal_initializer(gini=1.0')      | 初始化一个正交矩阵,gini参数作用是最终返回的矩阵是随机矩阵乘以gini的结果 |
+| tf.identity_initializer(gini=1.0)         | 初始化一个单位矩阵,gini参数作用是最终返回的矩阵是随机矩阵乘以gini的结果 |
+
+tf.Variable_scope方法的作用就是定义一个作用域,定义在Variable_scope作用域中的变量和操作,会将variable_scope的名称作为前缀添加到变量/操作名称前,支持嵌套的作用域,添加前缀规则和文件目录的规则类似.
+tf.variable_scope参数如果给定的是一个已经存在的作用域对象的时候,那么构建变量的时候表示直接跨过当前作用域前缀,直接成为一个完全不同于现在的作用域(直接创建给定作用域下的变量).但是构建操作的时候,不是和嵌套的方式一样,直接添加子作用域.
+tf.variable_scope参数中可以给定当前作用域默认的初始化器initializer,并且子作用域会直接继承父作用域的相关参数(是否重用,默认初始化器等)
+
+TensorFlow中的name_scope和variable_scope是两个不同的东西,name_scope的主要作用是为op_name前加前缀,variable_scope是为get_variable创建的变量的名字加前缀.简单来讲,使用tf.Variable创建的变量受name_scope和variable_scope的效果,付给变量添加前缀,但是使用tf.get_variable创建变量只受variable_scope的效果.
+
+name_scope的主要作用就是:TensorFlow中常常会有数以千计的邛,在可视化的过程中很难一下子展示出来,因此用name_scope为变量范围,在可视化中,这表示在计算图中的一个层级.name_scope会影响op_name,不会影响用get_variable()创建的变量,而会通过Variable()创建的变量.
+
+** TensorFlow读取数据的三种方式
+1. 供给数据(Feeding): 在TensorFlow程序运行的每一步,让Python代码来供给数据
+2. 从文件读取数据(深度学习中主要应用):在TensorFlow图 的起始,让一个输入管线从文件中读取数据
+3. 预加载数据: 在TensorFlow图 中定义常量或者变量来保存所有数据(仅适合小规模数据集的情况)
+
+** TensorFlow模型保存,提取
+TensorFlow使用tf.train.Saver类实现模型的保存和提取.Saver对象的saver方法将TensorFlow模型保存到指定路径中.
+通过Saver对象的restore方法可以加载模型,并通过保存好的模型变量相关值重新加载完全加载进来
+如果不希望重复定义计算图 上的运算,可以直接加载已经持久化的图 ,通过tf.train.import_meta_graph方法直接加载
+备注:在加载的时候,可以在Saver对象构建的时候明确给定变量名之间的映射关系
+
+** 激活函数
+   激活函数运行时激活神经网络中某一部分神经元,将激活信息向后传入下一层的神经网络.神经网络之所以能解决非线性问题,本质上就是激活函数加入非线性因素,弥补了线性模型的表达力,把"激活的神经元的特征"通过函数保留并映射到下一层.
+   因为神经网络的数学基础是处处可徽的,所以选取的激活函数要把保证数据输入与输出也是可徽的.
+ - Sigmod
+ - tanh
+ - RelU
+
+** TensorFlow常用API
+   - slice
+
+** TensorFlow模拟线性回归
+   TensorFlow开发的一般步骤:
+   1. 准备数据,进行数据清洗以及预处理
+   2. 构建模型,返回模型预测值
+   3. 预测值和真实值计算损失
+   4. 优化器设置学习率优化损失
+   5. 迭代训练优化器
+   6. 可以根据准确率作为评估指标,或者持久化模型,搭建可视化模型结构
+   7. 调用模型进行预测
+
+   8. 数据载入,数据清洗以及数据特征工程
+
+   9. 构建模型
+
+   10. 计算损失,准确率,构建优化器优化损失
+
+   11. 训练优化器,从而让模型拟合
+
+   12. 预测评估
