@@ -1293,7 +1293,7 @@ intend
 relationship
 opposite
 sources
-1199  	poetry
+poetry
 ability
 assistance
 operating
@@ -2520,7 +2520,7 @@ razor
 wished
 imaginative
 sounds
-2011 	hook
+hook
 wagon
 copper
 publication
@@ -2727,8 +2727,8 @@ confidential
 adoption
 require
 advanced
-2110    disgust
-2111    Detective
+disgust
+Detective
 philosophy
 waist
 Indian
@@ -2738,15 +2738,15 @@ pound
 receipt
 male
 pearl
-2115    characteristics
-2116    lazy
-2117   investigation
+characteristics
+    lazy
+   investigation
 limb
 self
 grammatical
 approval
 beast
-2120   estate
+   estate
 monkey
 elections
 jewel
@@ -3121,7 +3121,7 @@ Italian
 singing
 score
 vacation
-2311  	Models
+  	Models
 boards
 laugh
 supplies
@@ -4451,10 +4451,10 @@ candidate
 interview
 shortly
 sending
-3112 	senior
-3113 	receiving
-3114  	tied
-3115  	Presidential
+ 	senior
+ 	receiving
+  	tied
+  	Presidential
 facing
 Canada
 raising
@@ -4559,7 +4559,7 @@ Prince
 stems
 quarrel
 charter
-3211 	presentation
+ 	presentation
 Campus
 owner
 classical
@@ -4661,7 +4661,7 @@ heading
 Van
 apparatus
 ROMANTIC
-3311 	wedding
+ 	wedding
 dancers
 proportion
 They'll
@@ -5360,8 +5360,8 @@ managers
 announcement
 honored
 estimates
-4115 	biggest
-4116   	Puerto
+ 	biggest
+   	Puerto
 Portland
 workshop
 relieved
@@ -5587,7 +5587,7 @@ MIAMI
 exhibition
 HITS
 pitch
-4411  	Palm
+  	Palm
 triumph
 Baltimore
 doubtful

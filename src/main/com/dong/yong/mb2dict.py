@@ -70,10 +70,11 @@ if __name__ == '__main__':
         lines = file.readlines()
 
     words = []
-    for i in lines.__iter__():
+    for i in range(lines.__len__()):
         word = lines[i].strip().lower()
         words.append(word)
-    words = words.sort()
+    words.sort()
+    # print(" ".join(words))
     with open('words.txt', 'w') as file:
         file.write("\n".join(words))
 

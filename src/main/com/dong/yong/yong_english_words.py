@@ -119,15 +119,6 @@ def add_dict(dt, value):
     return dt
 
 
-def dict_to_wubi_code(dt, fps):
-    content = ''
-    for key, value in dt.items():
-        content += key + ' ' + ' '.join(value) + '\n'
-
-    with open(fps, 'w') as file:
-        file.write(content)
-
-
 def main():
     with open("words_6000.txt", 'r') as file:
         lines = file.readlines()
