@@ -26,7 +26,7 @@ def get_zip_file(input_path, result):
 
 
 def zip_file_path(input_path, output_path, output_name):
-    f = zipfile.ZipFile(output_path + os.path.sep + output_name + ".zip", 'w', zipfile.ZIP_DEFLATED)
+    f = zipfile.ZipFile(output_path + os.path.sep + output_name , 'w', zipfile.ZIP_DEFLATED)
     filelist = []
     get_zip_file(input_path, filelist)
     for file in filelist:
