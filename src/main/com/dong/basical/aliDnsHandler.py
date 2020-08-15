@@ -14,8 +14,8 @@ from aliyunsdkalidns.request.v20150109 import UpdateDomainRecordRequest
 
 class DnsHandler:
     # 从阿里云开发者后台获取Access_key_Id和Access_Key_secret
-    access_key_id = "LTAI4G8Jv5vyaZRu4e42JSgr"
-    access_key_secret = "DvzwJsWiD1Gu2QzsUx6cvdxj1CiOaB"
+    access_key_id = ""
+    access_key_secret = ""
 
     # 填入自己的域名
     # domain_name = "caoweidong.cn"
