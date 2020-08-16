@@ -6,6 +6,7 @@
 # @Software: IntelliJ IDEA
 
 import logging.config
+import os
 
 import yaml
 
@@ -15,10 +16,11 @@ __author__ = "caoweidong"
 class Logger(object):
     def __init__(self):
         # self.file = 'resources/logger.conf'
-        self.file = 'resources/config.yaml'
+        parent = os.path.dirname(os.path.realpath(__file__))
+        self.file = os.path.join(parent, 'resources/config.yaml')
 
     def get_logger(self, name="root"):
-        with open(self.file, 'r', encoding='utf-8') as f:
+        with open( self.file, 'r', encoding='utf-8') as f:
             conf = yaml.load(f, Loader=yaml.FullLoader)
             logging.config.dictConfig(conf)
         # logging.config.fileConfig(self.file)
