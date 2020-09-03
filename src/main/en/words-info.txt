@@ -1,0 +1,423 @@
+[melan]:黑
+ - melancholy	-->	 *melan-chloy	| 忧郁,悲哀
+ - melancholic	-->	*melan-cholic	| 忧郁的,抑郁的,患忧郁症的,忧郁症患者
+ - melancholiac	-->	*melan-choliac	| 患忧郁症的,忧郁症患者
+ - melancholia	-->	*melan-cholia	| 忧郁症
+ - melanoma		-->	*melan-oma	| 黑素瘤
+ - melanin		-->	*melan-in	| 黑色素
+ - melanism		-->	*melan-ism	| 黑变病,黑化
+[isol/insul]:岛屿,隔绝
+ - isolate	-->	*isol-ate	| 孤立的,隔离,使孤立
+ - insulate	-->	*insul-ate	| 使...绝缘,隔离
+ - insulator--> *insul-ator	| 绝缘体,绝热器
+ - peninsula--> pen-*insul-a	| 半岛
+ - insulation	-->	*insul-ation	| 隔离,孤立,绝缘
+ - insular	-->	*insul-ar	| 海岛的,孤立的,与世隔绝的,岛民
+ - isolation-->	*isol-ation	| 隔离,孤立
+[soli/sol]:单独的
+ - isolate	-->	isol-ate	| 孤立的,隔离,使孤立
+ - inconsolable	--> in-con-sol-able	| 无法安慰的; in(否定)+consolable可被安慰的-> 无法安慰的
+ - solidify	--> *sol-id-ify	| 使牢固,使团结,变坚固,变结实; 单独为一体的->结实的,
+ - solo		--> *sol-o		| 独奏,独唱,单独的,单独表演
+ - solace	--> *sol-ace		| 安慰,使快乐,缓和
+ - solitary	--> *sol-it-ary	| 孤独的,独立的,荒凉的,隐士
+ - solitarily --> *sol-it-ary-ly	| 寂寞地,独自一人地
+ - solitude	--> *sol-it-ude	| 孤独,隐居,荒僻的地方
+ - solitariness	--> *sol-it-ary-ness	| 隐居,单独
+ - consolatory	--> con-*sol-atory	| 慰问的,可慰藉的; con(一起)+sol -> 一起倾吐孤独->安慰,
+ - console	--> con-*sol-e	| 安慰，安抚; con-, 强调。-sol, 安慰，安抚，词源同solace,hilarious.
+ - consolable	--> con-*sol-able	| 可藉慰的,可安慰的
+ - consoling	--> con-*sol-ing		| 可安慰的
+ - consolatory	--> con-*sol-atory	| 慰问的,慰藉的
+ - consolation	--> con-*sol-ation	| 安慰,慰问,起安慰作用的人或事物
+&jungle		| 丛林,密林
+[roy/reg]:统治
+ - royal	--> *roy-al	| 国王的,女王的,皇家的,王室的
+ - royalist --> *roy-al-ist	| 保皇主义的,保皇党人的,保皇主义者
+ - royally	--> *roy-al-ly	| 庄严地,像国王似地
+ - royalism	--> *roy-al-ism	| 君主主义,保皇主义,忠君思想
+[nose]:鼻子
+ - nasty	--> *nast-y	|下流的,肮脏的,脾气不好的,险恶的
+[pass/pat/path]:感情,忍受,疾病
+ - patience	--> *pat-ience	| 耐心,毅力
+ - patient	--> *pat-ient	| 有耐心的,能忍耐的
+ - sympathy	--> sym-*path-y	| 同情,忠诚,感应; sym(共同) + pathy -> 共同的感情
+ - passion	--> *pass-ion	| 激情,热情
+ - incompatible	--> in-com-*pat-ible	| 不相容的,不能并存的,矛盾的 ; in(不) + com(一起)+pat(忍受) -> 不能彼此忍受 -> 不能并存
+ - psychopath	--> psycho-*path	| 精神病人 ; psycho(精神) + path(忍受) -> 精神病人
+ - empathy	--> em-*path-y	| 投入,移情作用,共鸣,执着投入,同理心 ; em(进入) + path(感情) -> 投入感情-> 共鸣
+&line		| 车道,小巷,甬道
+[her]:继承
+ - hereditament	--> *her-ed-ita-ment	| 可继承的财产,世袭财产
+ - inherit	--> in-*her-it	| 继承,遗传 ; in(进入)+her -> 进入继承人角色,
+ - disinherit	--> dis-in-*her-it	| 阻止...成为继承人,剥夺...继承权 ; dis(否定) + in(进入) + her ->
+ - heritage	--> *her-it-age	| 遗产,继承物
+ - heiress	--> *her-ess	| 女继承人
+ - heritable	--> *her-it-able	| 可转让的,可遗传的,可继承的
+ - heredity	--> *her-ed-ity	| 遗传,传统,遗传特征
+&cease		| 停止,终止
+[pli/ply/plex]:重叠,折叠
+ - employment	--> em-ploy-ment	| 工作,职业,使用 ; em(进入)+ploy -> 把人折叠进来 -> 雇佣
+ - complex		--> com-plex		| 复合体; com(全部) + plex -> 全部重叠起来 -> 复杂
+ - employ		--> em-ploy			| 使用,使忙于 ; em(进入) + ploy -> 把人折叠进来 -> 雇佣
+ - employer		--> em-ploy-er		| 雇主 ; em(进入) + ploy -> 把人折叠进来 -> 雇佣
+ - simple		--> sim-ple			| 简单的,平民
+ - simplicity	--> sim-pli-city	| 单纯,简朴
+ - simplify		--> sim-pli-fy		| 简化
+ - supply		--> sup-ply			| 补给,供给,供应,贮备
+ - accomplish	--> ac-com-pli-sh	| 完成 ; ac(向着,对于) + com(一起,全部) + pli -> 把....全部装满 -> 完成
+ - replenish	--> re-plen-ish		| 补充 ; re(再) + plen(满) + ish -> 再弄满 
+ - plentitude	--> plent-itude		| 丰富 ; plent + itude -> 满的状态
+ - replenishment--> 补充 ; re-plen-ish-ment|re(再) + plen(满) + ish -> 再弄满
+ - replete		--> re-plete		| 饱满的,塞满的 ; re(再) + plete -> 再满 -> 吃饱
+&shallow		| 浅的
+[tend]:延伸
+ - tender	--> tend-er		| 柔声细语的,和善的,温柔的,投标
+[cad/cas/cid]:下降,降临,发生
+ - casual	--> cas-ual		| 随便的,非正式的,临时的,偶然的 ; 词根-cas-指“落”，其变体有-cid-等，这里涉及s、d音变。'落'是突然降临，其同根词多带有'突然，随机'的意味,
+ - incidental	--> in-cid-ent-al	| 附带的,偶然的,容易发生的 ; in(进入) + cid(发生) -> 事件
+ - cadence	--> cad-ence	| 节奏,韵律,降调句,抑扬顿挫
+ - cadenza	--> cad-enza	| (音)装饰乐段,华彩乐段
+ - deciduous	--> de-cid-uous	| 每年落叶的,非永久性的 ; de(向下) + cid(落)
+ - accident	--> ac-cid-ent	| 事故,意外的事 ; ac(朝向) + cid(发生) + ent(名词词尾) -> 向着不好的方向发生
+ - cadaverous	--> cad-aver-ous	| 像尸体的,枯槁的,憔悴的
+[rab/rag/rav]:怒的
+ - enrage	--> en-rag-e	| 激怒,使暴怒
+ - raging	--> rag-ing		| 狂暴的,非凡的
+ - rabid	--> rab-id		| 猛烈的,热烈的,急进的,患狂犬病的
+ - raving	--> rav-ing		| 胡说的,疯狂的,狂暴的
+ - rage		--> rag-e		| 愤怒,情绪激动,风行一时,热量
+ - rave		--> rav-e		| 狂吼,狂暴,咆哮
+[mid]:中间
+ - midst	--> mid-st		| 中间,中部
+&stove		| 火炉,温室,窑
+&beast      |兽,性情凶残的人,行为粗暴的人,讨厌的人(事,物)
+[merit/meri/mere]:优点
+ - merit 	--> merit		| 功绩,价值,优点
+ - demerit	--> de-merit	| 缺点,短处,过失
+ - meretricious	--> mere-trix-ous	| 华而不实的,俗艳的,似是而非的,娼妓的,俗气的 ; mere(挣钱) + trix(阴性) -> 赚钱的女人
+ - meritocracy	--> merit-cracy		| 能者为领袖的制度,精英领导 ; merit(优点) + cracy(统治) -> 具有优点的人统治精英制度,
+ - meritocratic	--> merit-cracy		| 精英制度,能者为领袖的制度,精英领导 ;merit(优点) + cracy(统治) -> 具有优点的人统治 
+&skull		| 颅骨,脑袋
+&rival		| 竞争者,对手,敌手,能与...媲美
+&scent		| 气味,香味,痕迹
+[sens/sent]:感觉,认知
+ - sensation	--> sens-ation	| 感觉,感知,激动,轰动
+ - sentence	--> sent-ence	| 好句子是有感而发的 -> 句子,意见,宣判,命题
+ - consensus	--> con-sens-us	| c共识,一致,合意 ; on(一起) + sens -> 一起有感觉,感觉相同
+ - dissenter	--> dis-sent-er	| dis(分) + sens -> 感觉不同,意见不合;持异议者
+ - sense		--> sens-e		| 侦测,感官,感觉,理智,意义
+ - sensibility	--> sens-ibility| 情感,敏感性,感觉,识别力
+ - sensory	--> sens-ory	| 知觉的,感觉的,知觉器官的
+ - consent		--> con-sent	| 同意,许可,承诺 ; con(一起) + sent -> 感觉相同 -> 同意
+ - sensible		--> sens-ible	| 可察觉的,意识到的,实用的,可感知物
+[man]:手
+ - manipulate	--> mani-pul-ate	| 操纵,利用,假造 ; mani + pul(拉) + ate -> 用手拉,操纵
+ - manuscript	--> manu-script		| 手稿手抄的,手稿,原稿 ; manu(手) + script(写) -> 手写 -> 
+ - manifestation--> mani-fest-ation	| 显示,证明,示威活动 ; mani + fest打击 -> 用手打出 -> 不隐藏->表明
+ - manifast		--> mani-fest		| 不隐藏->表明 ; 运货单,旅客名单 , 显然的,明白的,显示,证实,出示mani + fest打击 -> 用手打出 -> 
+ - manumit		--> manu-mit		|  释放;解放(奴隶) ; manu + mit(放) -> 把手放了 ->
+ - management	--> man-age-ment	| 管理(层),经营,处理
+ - manifesto	--> mani-fest-o		| 宣言,声明,发表宣言 ; mani + fest打击 -> 用手打出 -> 不隐藏->表明
+[fier/feroci]:野外,未驯化的
+ - fierce	--> fier-ce		| 猛烈的,凶猛的,残暴的,强烈的
+ - ferocious--> feroci-ous	| 残忍的,凶猛的,极度的,十分强烈的
+ - ferocity	--> feroci-ty	| 凶猛性,残忍性,狂暴的行为
+ - fiercely	--> fier-ce-ly	| 猛烈地,厉害地
+&sack		| 袋子,劫掠,床,解雇,破坏
+[claim/clam]:呼喊,叫喊
+ - proclaim		--> pro-claim	| 正式宣布,公布,声明,赞扬,显示出 ; pro(在前面) + claim -> 在前面喊 -> 公布
+ - clamor		--> clam-or		| 喧闹,叫嚷,大声的要求
+ - acclamation	--> ac-clam-ation	| 欢呼 ; ac(表示加强) + claim(呼叫) -> 欢呼,称颂
+ - clamorous	--> clam-or-ous	| 吵闹的,大声疾呼的
+ - reclaim		--> re-claim	| 纠正,收回 ; re(再) + claim(呼喊) -> 喊回来 -> 
+ - clamour		--> clam-our	| 喧闹,喧嚷 ; clam(喊叫) + our(名词后缀) -> 
+ - claimant		--> claim-ant	| 申请者,要求者,索偿人
+[cede/ceed/cess]:表示走,让步
+ - concede		--> con-cede	| 让步,允许,承认; con(共同) + cede(让步) = 各退一步
+ - access		--> ac-cess		| 入口,出口,接近,进入
+ - recession	--> re-cess-ion	| 后退,不景气,凹入的地方 ; re(向后) + cess(走) = 后退
+ - accessible	--> ac-cess-ible| 可得到的,易接近的,可进入的
+ - secession	--> se-cess-ion	| 脱离,分离,脱离联邦 ; se(离开) + cess(走) = 脱离
+ - proceeds		--> pro-ceed-s	| 收益 ; pro(向前) + ceed(走) -> 收益
+ - antecedence	--> ante-cede-nce	| 居先,在先 ; ante(在...之前) + cede(走) ->
+&pasta		| 意大利面
+&trash		| 垃圾,废物,谬论,劣质品,损坏,毁坏,抨击,谴责
+[it]:表示行走
+ - ambitious	--> amb-it-ious	| 野心,雄心,热望的,有雄心的,有抱负的 ; amb(=ambi周围) + it -> 为求名声四处走动
+ - initiate	--> in-it-iate	| 创始人,新加入的,开始,启蒙 ; in(进入) + it -> 走进,开始的
+ - initiative	--> in-it-iative| 创始的,初步的,自发的,第一步,主动权
+ - ambition	--> amb-it-ion	| 野心,雄心,追求
+ - circuitous	--> circu-it-ous| 迂回的路的,迂曲的,绕行的 ; circ(圆圈) + it -> 走一圈 -> 电路,回路
+ - itinerary	--> it-iner-ary	| 旅程,旅行指南,游记,巡回的,游历的
+ - transitory	--> trans-it-ory| 暂时的,瞬息的,片刻的 ; trans(交换) + it(走) + roy -> 交换走 -> 你走他来 -> 短暂的
+&soap		| 肥皂,肥皂剧,谄媚
+&genre      |(艺术,写作,音乐等的)类型,体裁,风俗画
+[fort/force]:表示强大,力量
+ - comfortably	--> com-fort-ably	| 安乐地舒服地,充裕地 ; com(完全的) + fort -> 完全有力的 -> 舒适,使舒适
+ - enforce	--> en-force	| 加强,强迫,执行 ; en(在...之中) + force -> 让力量在...之中 -> 强迫...去做事
+ - effort	--> ef-fort	| 努力,努力的结果 ; ef(向外) + fort(力量) -> 把力量发挥出去 - 努力;
+ - perforce	--> per-force	| 必须地,强制地,通过环境的力量 ; per(穿过) + force
+ - fortissimo	--> fortissimo	| 极强音地(的)
+ - reinforcement--> re-force-ment	| 加固,增援,加强 ; re(再次) + force(强大)
+ - fort		--> fort	| 堡垒,要塞
+&charter		| 宪章,章程,特许状,(交通工具的)包租,特许成立,发特许执照,给予...特权
+[soli/sol]:表示单独的
+ - inconsolable	--> in-con-sol-able	| 无法安慰的,极为伤心的 ; in(否定) + consolable可被安慰的 -> 无法被安慰的
+ - soloist	--> sol-oist	| 独奏者,独唱者
+ - solidify	--> soli-dify	| 单独为一体的 -> 结实的; 使牢固,使团结,变坚固,变结实
+ - solo		--> sol-o	| 独奏,独唱,单独的,单独地,放单飞,单独表演
+ - solace	--> sol-ace	| 安慰,使快乐,缓和
+ - solitary	--> soli-tary	| 孤独的,独立的,荒凉的,隐士
+ - consolatory	--> con-sol-atory	| 慰问的,可慰藉的 ; con(一起) + sol -> 一直倾吐孤独 -> 安慰
+[fac/face/front]:表示脸,面
+ - confrontation--> con-front-ation	| 对审,面对面,面对 ; con(一起) + front(面对)
+ - efface	--> ef-face	| 擦掉,抹去,冲淡(记忆),隐没 ; ef(出) + face -> 把脸上的东西弄出去 -> 擦掉
+ - facet	--> fac-et	| 小平面,方面,刻面 ; fac-et -> 像脸的一面 -> 平面,表面
+ - ineffaceable	--> in-ef-face-able	| 抹不掉的,不能消除的 ; in(不) + efface(抹掉) + able
+ - facade	--> fac-ade	| 建筑物的正面,外表(犹指虚伪的)
+ - front	--> front	| 前面
+[leg]:表示法律
+ - legislative	--> leg-i-lat-ive	| 立法机构,立法权,立法的,有立法权的; leg + late(放) -> 放出法律 -> 立法
+ - legitimate	--> leg-i-timate	| 合法的,正当的,合理的,世袭的,使合法,授权,宣布,宣布...为合法
+ - allegation	--> al-leg-ation	| 断言,主张,辩解,暗指; al(朝向) + leg -> 宣布为合法 -> 断言,宣称
+ - leg-ality	--> leg-ality		| leg + ality(性质); 合法,正当,法律尊重主义
+ - legislate	--> leg-is-late		| ,使依法成; leg + late(放) -> 放出法律 -> 立法制定法律
+ - illegitimacy	--> il-leg-itim-acy	| il(否定) + leg + acy; 不法,私生
+ - legislation	--> leg-isl-ation	| 立法,法律 
+&tray		| 盘,托盘,碟,(各种用途的)浅塑料盒
+[tail]:表示剪,割
+ - curtail	--> cur-tail	| 简短失礼的,缩减,削减,截短; cur(短) + tail -> 减短,参考
+ - entail	--> en-tail	| 使必需,使蒙受,限定继承; en(使) + tail -> 把剪下的东西给别人
+ - retail	--> re-tail	| 零售; re(再) + tail -> 再分割 -> 零售
+ - tailoring	--> tail-or-ing	| 裁缝业
+ - tailor	--> tailor	| 裁缝,适应,试穿,修改
+ - detail	--> detail	| 细节详情; de(加强) + tail -> 不断剪下去 -> 琐事
+ - detailed	--> de-tail-ed	| 详细的; de(加强) + tail -> 不断剪下去 -> 琐事
+ - retailer	--> re-tail-er	| 零售商,零售店
+[cur]:表示关心,小心
+ - curiosity	--> *curi-osity	| 奇品;关心多 -> 好奇心
+ - accuraccy	--> ac-*cur-accy	| 非常小心的,精确度,准确性
+ - accurate		--> ac-*cur-ate	| 非常小心的,自然是准确的,准确的,精确的
+ - secure		--> se-*cure		| 安全的,牢固的,有把握的,保护;se(分离) + cure(关心) -> 无需关心 -> 安全
+ - incurious	--> in-*curi-ous	| 无好奇心的,不感兴趣的,不关心的;in(否定) + curious(好奇) -> 不好奇,不关心的
+ - pedicure		--> ped-i-*cure	| 修脚趾甲,足部治疗; ped(脚) + cure(关心)
+ - procure		--> pro-*cure	| 获得,取得,促成,拉皮条;pro(前面) + cure(关心) -> 关心面前的的东西 -> 取得
+[vi]:视角
+ - envision		--> en-*vi-sion	| 想像,展望
+&barn		|谷仓,畜棚,仓房,简陋的在建筑
+[stat]:站立,放置
+ - statistical	--> *stat-ist-ical	| 统计的,统计学的;stat(站立,站立方式 -> 国家) + ist(从事某项工作) -> 国家所处状态的人
+&lane		|车道,小巷,甬道,胡同
+&hormone	|激素,荷尔蒙
+[riv]:河 # 英语单词rival和river（河流）同源。rival来自古拉丁文rivalis，意思是河对面的人、共饮一江水的人。在古代，围绕一江一河往往会展开激烈的争夺，由近邻演变为对手。所以当rivalis借道法语进入英语时，演变的rival这个词很快就被赋予了竞争对手、敌手的含义
+ - rival		--> *riv-al		| 竞争者,对手,敌手,能与...媲美,与...匹敌,与...不分高低; riv(河) + al -> 两人隔河相对 -> 对手,竞争者
+ - rivalrous	--> *riv-al-r-ous	| 敌对性的,有竞争性的
+ - rivalry		--> *riv-al-ry 	| 竞争,对抗,竞赛
+&heal		| 复原,治疗,治愈,痊愈,和解,(使)结束
+&mushroom	| 可能来自moss(苔藓,潮湿的地方),即在潮湿的地方长出来的菌类;蘑菇
+&foster		| fost-er	|抚育,照料,培养,促进,助长;来自food,喂养食物
+[vac/van/void]:表示空虚,消失(来源于vacare)
+ - vacation		--> *vac-ation	| 假期,休假,腾出
+ - vacuum		--> *vac-uum	| 真空,空间,真空吸尘器
+ - vain			--> *vain		| 徒然的,虚荣的,空虚的
+ - vaunt		--> *vau-nt		| 吹嘘,夸张
+ - vanish		--> *van-ish	| 消失,不见了,绝迹
+ - vanity		--> *van-ity	| 虚荣心,浮华,无价值的东西
+ - evanescence	--> e-*van-escence	| 逐渐消失,容易消失,短暂性;e(出, 向外) + van(空) + escence(名词词尾)
+[turb]:表示搅动
+ - trubulence	--> *trub-ulence	| 喧嚣,狂暴,骚乱,湍流;动荡
+ - disturbance	--> dis-*turb-ance	| 扰乱,骚动
+ - perturbation	--> per-*turb-ation	| 扰乱;per(始终) + turb -> 始终搅动 -> 扰乱
+ - turbine		--> *turb-ine		| 涡轮
+ - perturb		--> per-*turb		| 扰乱,使混乱,使心慌;per(始终) + turb -> 始终搅动 -> 扰乱
+ - disturb		--> dis-*turb		| 扰乱,妨碍,使...不安
+ - turbulent	--> *turb-ulent		| 骚乱的,混乱的,激流的,湍流的,吵闹的;turb + ulent多...的 -> 搅动太多 -> 骚动的
+[rat/rate]:计算,思考
+ - rational		--> *rat-ion-al		| 合理的, 理性的, 明智的,清醒的
+ - rationalistic--> *rat-ion-al-istic	| 理性的,纯理论的
+ - rationally	--> *rat-ion-al-ly	| 理性地,讲道理地
+ - rationale	--> *rat-ion-al-e	| 基本原理,原理的阐述
+ - ration		-->	*rat-ion			| 定量, 口粮, 配给量
+ - rationality	--> *rat-ion-al-ity	| 合理性,合理的行动
+ - rationalization	--> *rat-ion-al-ization	| 合理化
+ - rationalisation	--> *rat-ion-al-isation	| 合理性
+ - rationalism		--> *rat-ion-al-ism		| 理性主义,唯理主义
+ - rationalize		--> *rat-ion-al-ize		| 实行合理化,作辩解,合理地思考
+ - rationalise		--> *rat-ion-al-ise		| 合理地说明
+[preci/prais]:表示价值
+ - appreciation		--> ap-*preci-ation	| 赏识,鉴识,感激; ap(=ad向着,去) + prec -> 去评价价值
+ - precious			--> *preci-ous		| 宝贵的,珍贵的,矫揉造作的,极其地
+ - appreciate		--> ap-preci-able	| 欣赏,感激,赏识,增值
+ - appreciable		--> ap-preci-able	| 可感知的,可评估的,很可观的
+ - appraise			--> ap-praise		| 评价,估价,鉴定
+ - preciosity		--> preci-osity		| 过于讲究,矫揉造作
+ - depreciatory		--> de-preci-atory	| 贬值,蔑视; de(向下)
+[lat]:表示拿,带
+ - translation	--> *trans-lat-ion	| 翻译,译文;trans(交换) + late -> 交换拿出 -> 翻译
+ - elation		--> e-*lat-ion		| 得意洋洋,兴高采烈;e(向外) + lat -> 将心情表露在外 -> 兴奋
+ - elate		--> e-*late			| 使欢欣,兴高采烈的;e(向外) + lat -> 将心情表露在外 -> 兴奋
+ - collation	--> col-*lat-ion	| 检验(整理,校对); col(=com一起) + lat -> 把东西放在一起 -> 进行校对
+ - ventilation	--> venti-*lat-ion	| 通风处,通风设备,充气; venti(风) + lat -> 通风
+ - dilatation	--> di-*lat-ation	| 膨胀,扩张,评述;di(分开) + lat -> 带开 -> 扩大
+ - collate		--> col-*late		| 对照,校对,校勘; col(=com一起) + lat -> 把东西放在一起 -> 进行校对
+[trop]:表示转=vturn
+ - subtropics	--> sub-trop-ics	| 亚热带地方;热带在南北回归线之间,回归线是太阳回转的地方,sub表示"亚"
+ - subtropical	--> sub-strop-ical	| 亚热带的;热带在南北回归线之间,回归线是太阳回转的地方,sub表示"亚"
+ - tropical		--> trop-ical		| 热带的,炎热的,热带植物的
+ - heliotrope	--> helil-trope		| helio(太阳) + trop -> 向阳花;天芥菜属植物,该植物的花香,淡紫色
+ - trophy		--> trop-hy			| 奖品,战利品; 经过轮番努力[turn again andagain]而得到的东西
+ - tropism		--> trop-ism		| 向性,趋性
+ - trope		--> trope			| 比喻,借喻; 转出来的意义
+[text]:表示纺织(=weave)
+ - context		--> con-text		| 上下文,环境,背景;con(一起) + text(编织) -> 把...编在一直,环境,背景,上下文
+ - texture		--> text-ure		| 质地,纹理,结构,本质,实质
+ - text			--> text			| 文本;文本就是文字编织在一起
+ - tissue		--> tiss-ue			| (动植物的)组织,薄的纱织品,餐巾纸,手巾纸
+ - pretext		--> pre-text		| 借口 ; pre(在前) + text(编织在一直的文字) -> 借口
+ - contextual	--> con-*text-ual	| 上下文的,前后关系的; con(一起) + text(编织) -> 把...编在一直,环境,背景,上下文
+ - textual		--> *text-ual		| 本文的,原文的;文本就是文字纺织在一起
+&fleet		| 舰队,车队,海军,捕鱼船队,浅,
+&ambassador	| 大使,外交官; 前缀ambi(两边,周围),ass词根ag的过去分词形式.原批量古罗马帝国派到各地巡视的官员
+[voc/voke]:表示叫喊,声音
+ - vocal	--> *voc-al				| 声音的,口述的,歌唱的
+ - avouch	--> a-*vo-uch			| 保证,确说,断言
+[funct/fungi]:表示活动
+ - disfunction	--> dis-*funct-ion	| 机能不良,功能紊乱,官能障碍
+ - *funct-ion	--> *func-ion		| 功能,函数
+ - disfunctional--> dis-*funct-ion-al	| 机能失调的,功能障碍的
+ - defunct		--> de-*funct		| 死的,非现存的
+ - functional	--> *funct-ion-al	| 功能的
+ - dysfunction	--> dys-*funct-ion	| 功能不良,机能障碍
+[cred/credit]:表示相信,信任
+ - accredited	--> ac-*credit-ed	| 被认可的,可接受的,委任的; ac(朝向,给予) + credit信任 -> 授权,信托
+ - incredulity	--> in-*cred-ul-ous	| 不易相信,深疑,怀疑心; incredulous去掉ous,加上ity
+ - credibility	--> *cred-ablity	| 可信性,可靠性; cred(相信,信任), ibility(能做) -> 可以靠他做 -> 他有可信性,可靠性
+ - credit		--> *cred-it		| 信用,荣誉,贷款,学分,归功于,赞颂,信任;cred + it(表名词)
+ - credence		--> *cred-ence		| 相信,祭器台,供桌; cred(信任) + ence名词后缀 -> 信任
+ - credible		--> *cred-ible		| 可信的,可靠的
+ - incredulous	--> in-*cred-ul-ous	| 怀疑的,不轻信的
+[eco]:表示生态
+ - ecological	--> *eco-log-ical	| 生态;eco(生态) + log(说) + ical(形容词词尾)
+ - ecologic		--> *eco-logic		| 生态的,生态学的
+ - ecologically	--> *eco-log-ical-ly| 从生态学的观点看
+ - ecology		--> *eco-log-y		| 生态学,社会生态学
+ - ecologist	--> *eco-log-ist	| 生态学者
+[order/ordin]:表示秩序,各类,等级
+ - ordinarily	--> *ordin-ari-ly	| 通常,普通,大概; 按照秩序的 -> 普通的
+ - extraordinarily	--> extra-*ordin-ari-ly	| 非常(格外) ; extra(额外的) + ordin -> 超过该等级的,超过规格的 -> 格外的
+ - ordinary		--> *ordin-ary		| 普通的 ;  按照秩序的 -> 普通的
+ - extraordinary--> extra-*ordin-ary| 非凡的,特别的,特派的 ; extra(额外的) + ordin -> 超过该等级的,超过规格的 -> 格外的
+ - ordination	--> *ordin-ation	| 任命,神职授任,命令
+ - order		--> *order			| 命令,秩序,规则,制度,次序,订购,整理,下订单
+ - orderly		--> *order-ly		| 有秩序的,和平的,一丝不苟的
+&slap	| 打,掌掴,掌击,恰好,正好,径直
+[spir]:表示呼吸(breathe)
+ - sprightly	--> spri-ght-ly		| 愉快的(地),兴致高的(地)
+ - inspire		--> in-*spir-e		| 影响, 使...感动,激发,煽动
+ - spirited		--> spir-it-ed		| 精神饱满的,活泼的,英勇的
+ - aspirant		--> a-spir-ant		| 怀抱志者,野心家
+ - aspiration	--> a-*spir-ation	| 渴望,抱负,吸气,吸引术; a(加强) + spir -> 看到渴望的东西加强呼吸 -> 热望
+ - expiry		--> ex-spir-y		| 逾期;ex(出) + spir -> 只出气不进气 -> 断气
+ - transpiration--> tran-*spir-ation| 蒸发;trans(交流) + spire -> 互相呼吸 -> 泄露
+ - conspiracy	--> con-*spir-acy	| 密谋策划,阴谋; con(共同) + spir(呼吸) + acy(名词词尾)
+[sist]:表示站立
+ - persist		--> per-sist		| 坚持,固执,持续 ; per(始终) + sist -> 始终站着 -> 坚持到底
+ - subsist		--> sub-*sist		| 供给食物,维持生活,生存,供养 ;  sub(下面) + sist -> 站下去 -> 活下去 -> 生存 
+ - subsistence	--> sub-*sist-ence	| 生存,生活; subsist + ence
+ - exist		--> ex-*sist		| 存在 ; ex + sist-> 站出来,活下去,存在
+ - existence	--> ex-*sist-ence	| 存在,生存 ;  subsist + ence
+ - persistent	--> per-*sist-ent	| 固执的,坚持的,连续的 ; per + sist + ent
+ - irresistible	--> ir-re-*sist-ible| 不可抵抗的,无法抗拒的 ; ir(不) + resist(再次站立) + ible -> 不可再次站立 -> 不可抵抗
+&panic	--> pan-ic	| 惊恐,恐慌,人心惶惶的局面
+[miss/mit]:表示送,放出
+ - commissioner	--> com-*miss-ion-er	| 委员,理事,行政长官; com(共同) + miss -> 共同送 -> 委任
+ - permission	--> per-*miss-ion	| 同意,允许,许可 ; per(始终) + miss + ion -> 始终放入 -> 允许
+ - permiss	--> per-*miss		| 允许,许可 ; per(始终) + miss + ion -> 始终放入 -> 允许
+ - manumission	--> manu-*miss-ion	| 解放
+ - commissary	--> com-*miss-ary	| 军粮供应 ; com(共同) + miss -> 把军粮一直发放
+ - admit	--> ad-*mit		| 允许,确认,承认,允许 ; ad(向着) + mit -> 对...放出许可 -> 允许进入
+ - admittance	--> ad-*mit-tance	| 入场权,准入 ;  ad(向着) + mit -> 对...放出许可 -> 允许进入
+[mov/mob/mot]:表示移走
+ - remove	--> re-*move		| 间距,移动,除去,开除,迁徙,搬迁 | re(再次) + mov -> 第一次移动是安装,再次移动就是解除,挪走 -> 除去
+ - motor	--> *mot-or		| 发动机,汽车,驱动, 机动的,有引擎的,汽车的
+ - emotion	--> e-*mot-ion		| 情感,情绪,感动 ; e(外) + mot -> 外露出来的东西 -> 感情
+ - movement 	--> move-ment		| 活动,运动,动作,移动
+ - movable	--> *mov-able		| 家具,动产,可动的,动产的,不定的
+&wan		| 苍白无力的,无血色的,憔悴的,宽域网(Wide Area Network)
+&hurricane	| 飓风,飓风般猛烈的东西
+&notable	| 特别,非常,尤其,极大程序上
+[limit/lim]:表示门槛,限制(threshold)
+ - limit	--> *limit		| 限制,界限,限度
+ - limitation	--> *limit-ation	| 限制
+ - limited	--> *limit-ed		| 有限的
+ - limitless	--> *limit-less		| 无限的,界限的
+ - sublime	--> sub-*lim-e		| 高尚的,壮观的,卓越的,提高 ; sub(在...下面) + lime -> 在限制下不乱做事 -> 崇高
+ - subliminal	--> sub-*limin-al	| 下意义的,识阈的,潜在意识的 ; sub(下面) + limin -> 在门槛下 -> 在意识下 -> 潜意识
+ - preliminary	--> pre-*limin-ary	| 预备的,初步的,准备工作,初步行动 
+[trag]:表示山羊,后引申为悲剧(最开始的悲剧是撒克逊人的山羊剧)
+ - tragedienne	--> trag-ed-ienne	| 悲剧女演员
+ - tragedian	--> trag-ed-ian		| 悲剧演员,悲剧作家
+ - tragical	--> trag-ic-al		| 悲剧的,悲剧性的
+ - tragicomic	--> trag-ic-omic	| 悲喜剧的
+ - tragicomedy	--> trag-ic-om-ed-y	| 悲喜剧
+ - tragic	--> trag-ic		| 悲剧的,悲惨的
+ - tragedy	--> trag-ed-y		| 悲剧,惨事,灾难
+[equ/equi]:表示相等,平均
+ - equivalent	--> equi-val-ent	| 等价的,相等的,相等物 ; equi(相等) + val(力量) + ent -> 力量平等 -> 相等的
+ - equipotential	--> equi-potential	| 等位的,等电位的,等势的 ; equi + potential(位置,电位)
+ - equilibrium		--> equi-libr-ium	| 平衡,均衡 ; equi + libr(自由) + ium -> 在自由状态下平等
+ - equinox	--> *equi-nox	| 昼夜平分点,春分或秋分 ; equi + nox(夜晚) -> 夜晚平等与白天的时候 = 春分或秋分
+ - equator	--> *equ-ator	| 赤道 ; equate + or -> 使[地球]平分 -> 赤道
+ - equalitarian	--> *equ-alitarian	| 平均主义者的,平均主义者
+ - equitable	--> *equit-able	| 公平的,公正的 ; equity(公正) + able(能...的)
+[liqu]:表示液体(fluid)
+ - liquid	--> liqu-id	| 液体的,液态的,液体
+ - liquor	--> liqu-or	| 酒
+ - liquefy	--> liqu-efy	| 液化,溶解
+ - liqueur	--> liqu-eur	| 利口酒
+ - liquidate	--> liqu-id-ate	| 偿付,清算,扫除,清算,整理,破产 ; liqu + date -> 使变得像液体 -> 使变得清澈,清算
+ - liquefaction	--> liqu-ef-action	| 液化,溶解,液化状态
+ - liquidity	--> liqu-id-ity	| 流动性,偿债能力
+[ment]:表示思考,神智
+ - reminder	--> re-*mind-er	| 提醒的人,催函; re(再次) + mind
+ - mental	--> ment-al	| 精神的,脑力的,精神错乱的,传心术的
+ - comment	--> com-*ment	| 注释,评论,闲话 ; com(共同) + ment -> 共同思考 -> 评论
+ - reminiscent	--> re-min-iscent	| 回忆者,回忆录作者,加快的,怀旧的,耽于回想的
+ - mentation	--> *ment-ation		| 精神作用,心理状态
+ - mentality	--> mental-ity	| 精神力,,智力,头脑作用 ; mental(精神力) + ity
+ - remind	--> re-*mind	| 提醒,使想起
+[grad/gress]:表示步,级
+ - aggression	--> ag-*gress-ion	| 进攻,侵犯,侵害,侵略 ; a(向着) + gress -> 向着...前进 -> 攻击, 侵犯
+ - congress	--> con-*gress		| 国会,代表大会,会议,社交 ; con(一起) + gress(走) -> 走到一起  -> 开会,国会
+ - degrading	--> de-*grad-ing	| 丧失体面的,不名誉的,可耻的 ; de(向下) + grad(走) + ing -> 向下降了 -> 不名誉了
+ - contigrade	--> conti-*grad-e	| 摄氏度 ; conti(百) + grade(级,度) -> 摄氏度有100个不同的等级
+ - regression	--> re-*gress-ion	| 复原,逆行,退步 ; re(向后) + gress(走) -> 逆行
+ - ingredient	--> in-*gred-ient	| 成分,因素 ; in(在里面) + gred -> 跑到...里面的东西 -> 成分
+ - grade	--> *grade		| 年级,成绩,分数,等级,级别
+[aesthet/esthet]:表示感觉
+ - anesthetize	--> an-*esthet-ize	| 使麻醉, 审美学 ; an(反意词缀) + esthet(感觉) -> 使没有感觉 -> 麻醉
+ - aesthetics	--> *aesthet-ics	| 美学,审美学 ; aethet感觉,美学是一门关于感觉的科学
+ - anesthesia	--> an-*esthe-sia	| 麻醉,麻木 ;  an(反意词缀) + esthet(感觉) -> 使没有感觉 -> 麻醉
+ - aesthetic	--> *aesthet-ic		| 美学的,审美的,有美感的 ; 
+[pel/puls]:表示驱动,推动
+ - compel	--> com-*pel	| 强迫,迫使 ; com(一起) + pel -> 好多人一起推动你 -> 强迫
+ - appeal	--> ap-*pel		| 恳求,上诉,吸引力 ; ap(向着) + peal -> 向着...推动自己的诉求 -> 恳求,诉求
+ - pulse	--> *pulse		| 脉冲,脉波,脉搏, 跳动,脉跳
+ - repulsive	--> re-*puls-ive| 令人憎恶的,让人厌恶的,使人反感的,相斥的,排斥的 ; re(回) + pul -> 推回去 -> 反驳,拒绝,击退
+ - peal	--> *peal		| 钟声,鸣响
+ - repulsion	--> re-*puls-ion| 厌恶 ; re(回) + pul -> 推回去,反驳,拒绝,击退
+ - repellent	--> re-*pel-lent| 排斥力,排斥的 ; re(回) + pul -> 推回去,反驳,拒绝,击退
+&genre		| (艺术,写作,音乐等的)类型,体裁,风俗画
+[oper/opus]:表示工作
+ - cooperative	--> co-*oper-ative		| 合作的,共同的,合作社 ; co(一起) + oper -> 一起工作 -> 全力,协力
+ - inoperative	--> in-*oper-ative		| 不活动的, 无效力的,不发生效力的 ; in(否定) + oper -> 不工作的 -> 不起作用
+ - operatic	--> *oper-atic			| 歌剧的,歌剧风格的 ; -oper-工作 -> 表演 -> 歌剧 + atic形容词词尾
+ - operate	--> *oper-ate			| 操作,运转,起作用,动手术
+ - operator	--> *oper-ator			| 操作员,管理者,技工
+[toler]:表示容忍
+ - tolerant	--> *toler-ant		| 宽容的
+ - tolerate	--> *toler-ate		| 容忍,忍受
+ - intolerant	--> *in-*toler-ant	| 不能容忍的(偏执的)
+ - tolerable	--> *toler-able		| 可容忍的,还不错的
+&frontier		| 边境,边界,边缘,国界,边疆的
