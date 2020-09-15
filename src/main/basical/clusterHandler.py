@@ -8,28 +8,27 @@ from urllib.request import urlopen
 from aliyunsdkcore.client import AcsClient
 from aliyunsdkcore.acs_exception.exceptions import ClientException
 from aliyunsdkcore.acs_exception.exceptions import ServerException
-from aliyunsdkalidns.request.v20150109 import DescribeDomainRecordsRequest
+from aliyunsdkalidns.request.v20150109.DescribeSubDomainRecordsRequest import DescribeSubDomainRecordsRequest
+from aliyunsdkalidns.request.v20150109.DescribeDomainRecordsRequest import DescribeDomainRecordsRequest
 from aliyunsdkalidns.request.v20150109 import UpdateDomainRecordRequest
 
 
 class DnsHandler:
     # 从阿里云开发者后台获取Access_key_Id和Access_Key_secret
-    access_key_id = ""
-    access_key_secret = ""
+    access_key_id = None
+    access_key_secret = None
 
     # 填入自己的域名
-    # domain_name = "caoweidong.cn"
-    domain_name = "曹伟东.com"
+    domain_name = None
 
     # 填入二级域名的RR值
-    # rr_keyword = "home"
-    rr_keyword = "www"
+    rr_keyword = None
 
     # 解析记录类型,一般为A记录
-    record_type = "A"
+    record_type = None
 
     # 用于储存解析记录的文件名
-    file_name = "/opt/workspace/sys/script/ali_domain/.ip_addr"
+    file_name = None
 
     client = None
     record = None
@@ -37,6 +36,15 @@ class DnsHandler:
 
     # 初始化,获取client实例
     def __init__(self):
+        with open("conf.json", "r", encoding="utf-8") as f:
+            dt = json.load(f)
+        self.access_key_id = dt["access_key_id"]
+        self.access_key_secret = dt["access_key_secret"]
+        self.domain_name = dt["domain_name"]
+        self.rr_keyword = dt["rr_keyword"]
+        self.record_type = dt["record_type"]
+        self.file_name = dt["file_name"]
+
         self.client = AcsClient(
             self.access_key_id,
             self.access_key_secret
@@ -57,7 +65,7 @@ class DnsHandler:
             r = file_handler.read()
             file_handler.close()
         else:
-            request = DescribeDomainRecordsRequest.DescribeDomainRecordsRequest()
+            request = DescribeDomainRecordsRequest()
             request.set_PageSize(10)
             request.set_action_name("DescribeDomainRecords")
             request.set_DomainName(self.domain_name)
@@ -93,7 +101,8 @@ class DnsHandler:
 
     # 获取当前公网IP
     def get_current_ip(self):
-        return json.load(urlopen('http://jsonip.com'))['ip']
+        # return json.load(urlopen('http://jsonip.com'))['ip']
+        return urlopen('https://api-ipv4.ip.sb/ip').read()
 
 
 # 实例化类并启动更新程序
