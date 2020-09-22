@@ -1,19 +1,19 @@
 # -*- coding=utf-8 -*-
-"""
-阿里云域名解析实现家庭局域网动态域名解析
-"""
-import os
 import json
+import logging
+import os
 from urllib.request import urlopen
-from aliyunsdkcore.client import AcsClient
-from aliyunsdkcore.acs_exception.exceptions import ClientException
-from aliyunsdkcore.acs_exception.exceptions import ServerException
-from aliyunsdkalidns.request.v20150109.DescribeSubDomainRecordsRequest import DescribeSubDomainRecordsRequest
-from aliyunsdkalidns.request.v20150109.DescribeDomainRecordsRequest import DescribeDomainRecordsRequest
+
 from aliyunsdkalidns.request.v20150109 import UpdateDomainRecordRequest
+from aliyunsdkalidns.request.v20150109.DescribeDomainRecordsRequest import DescribeDomainRecordsRequest
+from aliyunsdkcore.client import AcsClient
+from logger import logger
 
 
 class DnsHandler:
+    """
+    阿里云域名解析实现家庭局域网动态域名解析
+    """
     # 从阿里云开发者后台获取Access_key_Id和Access_Key_secret
     access_key_id = None
     access_key_secret = None
@@ -36,12 +36,13 @@ class DnsHandler:
 
     # 初始化,获取client实例
     def __init__(self):
-        with open("conf.json", "r", encoding="utf-8") as f:
+        with open(os.path.join(os.path.dirname(__file__), "aliCloud.json"), "r", encoding="utf-8") as f:
             dt = json.load(f)
         self.access_key_id = dt["access_key_id"]
         self.access_key_secret = dt["access_key_secret"]
         self.domain_name = dt["domain_name"]
         self.rr_keyword = dt["rr_keyword"]
+        logger.info("nomain name --> {}.{}".format(self.rr_keyword, self.domain_name))
         self.record_type = dt["record_type"]
         self.file_name = dt["file_name"]
 
@@ -51,34 +52,54 @@ class DnsHandler:
         )
         self.record = self.get_record()
         self.current_ip = self.get_current_ip()
+        logger.info("current IP address --> {}".format(self.current_ip))
 
-    # 如果公网IP发生变化,则自动修改阿里云解析记录
     def reset(self):
+        """
+        阿里云不允许修改相同的解析，所以需要比对IP是否一致
+        如果公网IP发生变化,则自动修改阿里云解析记录
+        :return:
+        """
         if self.current_ip != self.get_record_value():
-            print(self.update_record(self.current_ip))
+            logger.info("your IP address has changed")
+            logger.info("begin to update mapping to domain name")
+            self.update_record()
             self.get_record()
+        else:
+            logger.info("your IP address doesn't change")
 
     # 获取阿里云域名解析完整记录,并使用文件缓存
     def get_record(self):
         if os.path.isfile(self.file_name):
-            file_handler = open(self.file_name, 'r')
-            r = file_handler.read()
-            file_handler.close()
+            with open(self.file_name, 'r', encoding='utf-8') as f:
+                return json.load(f)
         else:
-            request = DescribeDomainRecordsRequest()
-            request.set_PageSize(10)
-            request.set_action_name("DescribeDomainRecords")
-            request.set_DomainName(self.domain_name)
-            request.set_RRKeyWord(self.rr_keyword)
-            request.set_TypeKeyWord(self.record_type)
+            desc =  self.domain_desc()
+            self.write_domain_desc(desc)
+            return desc
 
-            r = self.client.do_action_with_exception(request)
-            # print(r)
-            file_handler = open(self.file_name, 'wb')
-            # file_handler.write(r.encode("UTF-8"))
-            file_handler.write(r)
-            file_handler.close()
-        return json.loads(r)
+    def domain_desc(self, operate_type='get'):
+        """
+        get domain name describle from ali cloud
+        :return:
+        """
+        request = DescribeDomainRecordsRequest()
+        # request.set_accept_format("json")
+        request.set_PageSize(10)
+        request.set_action_name("DescribeDomainRecords")
+        request.set_DomainName(self.domain_name)
+        request.set_RRKeyWord(self.rr_keyword)
+        request.set_TypeKeyWord(self.record_type)
+
+        aa = self.client.do_action_with_exception(request)
+        r = json.loads(aa.decode())
+        logger.info("{} domain name describe success --> {}".format(operate_type, json.dumps(r, indent=4, ensure_ascii=False, sort_keys=True)))
+        return r
+
+    def write_domain_desc(self, domain_desc):
+        with open(self.file_name, 'w', encoding='utf-8') as f:
+            json.dump(domain_desc, f, indent=4, ensure_ascii=False, sort_keys=True)
+        logger.info("write into domain name desc into file success --> {}".format(self.file_name))
 
     # 获取阿里云域名解析记录ID
     def get_record_id(self):
@@ -86,27 +107,42 @@ class DnsHandler:
 
     # 获取当前域名解析记录
     def get_record_value(self):
-        return self.record["DomainRecords"]["Record"][0]["Value"]
+        original_ip = self.record["DomainRecords"]["Record"][0]["Value"]
+        logger.info("original IP address --> {}".format(original_ip))
+        return original_ip
 
     # 修改阿里云解析记录
-    def update_record(self, value):
+    def update_record(self):
         request = UpdateDomainRecordRequest.UpdateDomainRecordRequest()
         request.set_action_name("UpdateDomainRecord")
         request.set_RecordId(self.get_record_id())
         request.set_Type(self.record_type)
         request.set_RR(self.rr_keyword)
-        request.set_Value(value)
+        request.set_Value(self.current_ip)
 
-        return self.client.do_action_with_exception(request)
+        r = json.loads(self.client.do_action_with_exception(request).decode())
+        logger.info(json.dumps(r, indent=4, ensure_ascii=True))
+        logger.info("update domain name mapping success : {} --> {}.{}".format(self.current_ip, self.rr_keyword, self.domain_name))
+        desc =  self.domain_desc("update")
+        self.write_domain_desc(desc)
+        return desc
 
     # 获取当前公网IP
-    def get_current_ip(self):
-        # return json.load(urlopen('http://jsonip.com'))['ip']
-        return urlopen('https://api-ipv4.ip.sb/ip').read()
+    @staticmethod
+    def get_current_ip():
+        ip = urlopen('https://api-ipv4.ip.sb/ip').read().decode().replace('\n', '').replace('\r', '')
+        return ip
 
 
-# 实例化类并启动更新程序
-dns = DnsHandler()
-dns.reset()
-
-
+if __name__ == '__main__':
+    # 实例化类并启动更新程序
+    dns = DnsHandler()
+    # dns.domain_desc()
+    dns.reset()
+    # dns.domain_desc("get")
+    # clt = AcsClient("LTAI4GAYRiAArDQyT186ZsJM", "vU7Vagyp21LnDR4DZxmCfFNgV6Jpbo")
+    # DomainRecords = DescribeDomainRecordsRequest()
+    # DomainRecords.set_accept_format('json')
+    # DomainRecords.set_DomainName("caoweidong.cn")
+    # result = json.loads(clt.do_action_with_exception(DomainRecords))
+    # print(result)
