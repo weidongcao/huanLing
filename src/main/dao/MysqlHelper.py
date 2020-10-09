@@ -20,7 +20,7 @@ class MysqlHelper():
             user=self.__db_user,
             password=self.__db_password,
             database=self.__db_database,
-            charset='utf8'
+            charset='utf8mb4'
         )
 
     def insert_bulk1(self, sql, insert_data):

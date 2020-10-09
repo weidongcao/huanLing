@@ -5,7 +5,7 @@ import os
 import platform
 import re
 
-import com.dong.yong.yong_util as util
+import yong.yong_util as util
 
 # 五笔源库
 wbx = 'wbx'
