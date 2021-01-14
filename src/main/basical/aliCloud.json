@@ -1,8 +1,0 @@
-{
-  "access_key_id" : "",
-  "access_key_secret" : "",
-  "domain_name" : "caoweidong.cn",
-  "rr_keyword" : "www",
-  "record_type" : "A",
-  "file_name" : "/opt/workspace/sys/script/ali_domain/.ip_addr"
-}
