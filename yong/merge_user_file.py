@@ -5,7 +5,7 @@ import os
 import platform
 import re
 
-import yong.yong_util as util
+import yong_util as util
 
 # 五笔源库
 wbx = 'wbx'
@@ -198,7 +198,7 @@ def add_item(mb, tup):
         if index >= mb[key].__len__():  # 如果下标大于词库下标说明是需要在主码表操作
             flat = False
         else:
-            if mb[key].__contains__(value):  # 如果用码表已经包含则不写入
+            if not mb[key].__contains__(value):  # 如果用码表已经包含则不写入
                 mb[key].insert(index, value)
             flat = True
     else:
@@ -262,11 +262,18 @@ def main():
     # print_dict(mb[chinese], '汉字')
     # print('\n'.join(dlist))
 
+    # 将汉字写入个人词库
     util.dict_to_wubi_code(mb[chinese], os.path.join(root_dir, 'mb/my_chinese.txt'), gb18030)
+    # 将英文短语写入个人词库
     util.dict_to_wubi_code(mb[phrase], os.path.join(root_dir, 'mb/my_phrase.txt'), gb18030)
+    # 将英文单词写入个人词库
     util.dict_to_wubi_code(mb[words], os.path.join(root_dir, 'mb/my_words.txt'), gb18030)
+    # 将特殊字符写入个人词库
     util.dict_to_wubi_code(mb[special], os.path.join(root_dir, 'mb/my_special.txt'), gb18030)
+    # 将中英混输写入个人词库
     util.dict_to_wubi_code(mb[maxture], os.path.join(root_dir, 'mb/my_maxture.txt'), gb18030)
+
+    # 写入之后原来的user.txt保持不变,确认后请手动删除
 
     clist = []
     for key, value in mb[wbx].items():
