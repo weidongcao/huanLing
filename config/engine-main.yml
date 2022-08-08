@@ -1,0 +1,22 @@
+# 日志配置
+config:
+  server:
+    # 是否连接配置中心，true则获取远程配置
+    is_config_center: false
+  config_center:
+    # 配置中心连接
+#    url: http://192.168.6.125:55374
+    url: http://configCenter01:55374
+    accesskey:
+      # secret为空时跳过认证，不为空时进行认证
+      secret:
+      #  项目id
+    app_id: wavepoint
+    # 集群名称
+    cluster: default
+    log:
+      # 日志命名空间
+      namespaces: ['logger.yml']
+    config:
+      # 配置命名空间
+      namespaces: ['agent.yml']

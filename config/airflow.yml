@@ -1,0 +1,7 @@
+if_check_dependence: false
+airflow:
+    host: airflow-webserver
+    port: 55379
+    auth: basic
+    username: wavepoint
+    password: airflow
